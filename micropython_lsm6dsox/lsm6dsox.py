@@ -16,8 +16,6 @@ MicroPython Library for the ST LSM6DSOX accelerometer/gyro Sensor
 
 from time import sleep
 from math import radians
-
-import time
 from micropython import const
 from micropython_lsm6dsox.i2c_helpers import CBits, RegisterStruct
 
@@ -96,27 +94,12 @@ _CTRL1_XL = const(0x10)
 _CTRL2_G = const(0x11)
 _LSM6DS_CTRL3_C = const(0x12)
 _CTRL8_XL = const(0x17)
-_LSM6DS_CTRL9_XL = const(0x18)
-_LSM6DS_CTRL10_C = const(0x19)
-_LSM6DS_ALL_INT_SRC = const(0x1A)
-_LSM6DS_OUT_TEMP_L = const(0x20)
-_LSM6DS_OUTX_L_G = const(0x22)
-_LSM6DS_OUTX_L_A = const(0x28)
-_LSM6DS_MLC_STATUS = const(0x38)
-_LSM6DS_STEP_COUNTER = const(0x4B)
-_LSM6DS_TAP_CFG0 = const(0x56)
-_LSM6DS_TAP_CFG = const(0x58)
-_LSM6DS_MLC0_SRC = const(0x70)
+_OUT_TEMP_L = const(0x20)
+_OUTX_L_G = const(0x22)
+_OUTX_L_A = const(0x28)
 _MILLI_G_TO_ACCEL = 0.00980665
 _TEMPERATURE_SENSITIVITY = 256
 _TEMPERATURE_OFFSET = 25.0
-
-_LSM6DS_EMB_FUNC_EN_A = const(0x04)
-_LSM6DS_EMB_FUNC_EN_B = const(0x05)
-_LSM6DS_FUNC_CFG_ACCESS = const(0x01)
-_LSM6DS_FUNC_CFG_BANK_USER = const(0)
-_LSM6DS_FUNC_CFG_BANK_HUB = const(1)
-_LSM6DS_FUNC_CFG_BANK_EMBED = const(2)
 
 
 class LSM6DSOX:
@@ -151,9 +134,9 @@ class LSM6DSOX:
     """
 
     _device_id = RegisterStruct(_LSM6DS_WHOAMI, "<b")
-    _raw_accel_data = RegisterStruct(_LSM6DS_OUTX_L_A, "<hhh")
-    _raw_gyro_data = RegisterStruct(_LSM6DS_OUTX_L_G, "<hhh")
-    _raw_temp_data = RegisterStruct(_LSM6DS_OUT_TEMP_L, "<h")
+    _raw_accel_data = RegisterStruct(_OUTX_L_A, "<hhh")
+    _raw_gyro_data = RegisterStruct(_OUTX_L_G, "<hhh")
+    _raw_temp_data = RegisterStruct(_OUT_TEMP_L, "<h")
 
     _acceleration_range = CBits(2, _CTRL1_XL, 2)
     _acceleration_full_scale = CBits(1, _CTRL8_XL, 1)
@@ -327,7 +310,7 @@ class LSM6DSOX:
         if value not in data_rate_values:
             raise ValueError("Value must be a valid acceleration_data_rate setting")
         self._acceleration_data_rate = value
-        time.sleep(0.2)
+        sleep(0.2)
 
     @property
     def gyro_data_rate(self) -> str:

@@ -51,12 +51,3 @@ Example showing the High pass filter setting
 .. literalinclude:: ../examples/lsm6dsox_high_pass_filter.py
     :caption: examples/lsm6dsox_high_pass_filter.py
     :lines: 5-
-
-High pass filter settings
---------------------------
-
-Example showing the High pass filter setting
-
-.. literalinclude:: ../examples/lsm6dsox_high_pass_filter.py
-    :caption: examples/lsm6dsox_high_pass_filter.py
-    :lines: 5-
