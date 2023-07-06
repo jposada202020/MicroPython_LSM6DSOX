@@ -1,0 +1,11 @@
+{
+  "urls": [
+    ["micropython_lsm6dsox/examples/lsm6dsox_acceleration_range.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_acceleration_range.py"],
+    ["micropython_lsm6dsox/examples/lsm6dsox_high_pass_filter.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_high_pass_filter.py"],
+    ["micropython_lsm6dsox/examples/lsm6dsox_simpletest.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_simpletest.py"],
+    ["micropython_lsm6dsox/examples/lsm6dsox_gyro_data_rate.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_gyro_data_rate.py"],
+    ["micropython_lsm6dsox/examples/lsm6dsox_acceleration_data_rate.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_acceleration_data_rate.py"],
+    ["micropython_lsm6dsox/examples/lsm6dsox_gyro_range.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_gyro_range.py"]
+  ],
+  "version": "0.1"
+}

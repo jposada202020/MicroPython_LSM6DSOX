@@ -78,7 +78,16 @@ HPF_DIV100 = const(0b100)
 HPF_DIV200 = const(0b101)
 HPF_DIV400 = const(0b110)
 HPF_DIV800 = const(0b111)
-high_pass_filter_values = (SLOPE, HPF_DIV10, HPF_DIV20, HPF_DIV45, HPF_DIV100, HPF_DIV200, HPF_DIV400, HPF_DIV800)
+high_pass_filter_values = (
+    SLOPE,
+    HPF_DIV10,
+    HPF_DIV20,
+    HPF_DIV45,
+    HPF_DIV100,
+    HPF_DIV200,
+    HPF_DIV400,
+    HPF_DIV800,
+)
 
 
 _LSM6DS_MLC_INT1 = const(0x0D)
