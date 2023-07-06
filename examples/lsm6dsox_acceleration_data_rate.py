@@ -9,6 +9,10 @@ from micropython_lsm6dsox import lsm6dsox
 i2c = I2C(1, sda=Pin(2), scl=Pin(3))  # Correct I2C pins for RP2040
 lsm = lsm6dsox.LSM6DSOX(i2c)
 
+# The sensor seems to return strange values doing this example
+# Not sure why. Work left for the reader
+
+
 data_rate_values = (
     lsm6dsox.RATE_104_HZ,
     lsm6dsox.RATE_208_HZ,
