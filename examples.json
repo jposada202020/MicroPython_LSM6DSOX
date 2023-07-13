@@ -7,5 +7,5 @@
     ["micropython_lsm6dsox/examples/lsm6dsox_acceleration_data_rate.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_acceleration_data_rate.py"],
     ["micropython_lsm6dsox/examples/lsm6dsox_gyro_range.py", "github:jposada202020/MicroPython_LSM6DSOX/examples/lsm6dsox_gyro_range.py"]
   ],
-  "version": "0.1"
+  "version": "1"
 }

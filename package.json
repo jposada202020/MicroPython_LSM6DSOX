@@ -4,5 +4,5 @@
     ["micropython_lsm6dsox/i2c_helpers.py", "github:jposada202020/MicroPython_LSM6DSOX/micropython_lsm6dsox/i2c_helpers.py"],
     ["micropython_lsm6dsox/lsm6dsox.py", "github:jposada202020/MicroPython_LSM6DSOX/micropython_lsm6dsox/lsm6dsox.py"]
   ],
-  "version": "0.1"
+  "version": "1"
 }
