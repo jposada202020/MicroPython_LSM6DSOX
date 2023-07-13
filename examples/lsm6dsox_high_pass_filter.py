@@ -16,7 +16,7 @@ while True:
         print("Current High pass filter setting: ", lsm.high_pass_filter)
         for _ in range(10):
             accx, accy, accz = lsm.acceleration
-            print("x:{:.2f}m/s2, y:{:.2f}m/s2, z:{:.2f}m/s2".format(accx, accy, accz))
+            print(f"x:{accx:.2f}m/s2, y:{accy:.2f}m/s2, z{accz:.2f}m/s2")
             print()
             time.sleep(0.5)
         lsm.high_pass_filter = high_pass_filter

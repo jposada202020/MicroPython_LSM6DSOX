@@ -11,8 +11,8 @@ lsm = LSM6DSOX(i2c)
 
 while True:
     accx, accy, accz = lsm.acceleration
-    print("x:{:.2f}m/s2, y:{:.2f}m/s2, z{:.2f}m/s2".format(accx, accy, accz))
+    print(f"x:{accx:.2f}m/s2, y:{accy:.2f}m/s2, z{accz:.2f}m/s2")
     gyrox, gyroy, gyroz = lsm.gyro
-    print("x:{:.2f}°/s, y:{:.2f}°/s, z{:.2f}°/s".format(gyrox, gyroy, gyroz))
+    print(f"x:{gyrox:.2f}°/s, y:{gyroy:.2f}°/s, z{gyroz:.2f}°/s")
     print("")
     time.sleep(0.5)

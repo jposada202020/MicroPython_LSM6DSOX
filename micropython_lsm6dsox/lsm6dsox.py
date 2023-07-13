@@ -131,6 +131,8 @@ class LSM6DSOX:
 
     .. code-block:: python
 
+        accx, accy, accz = lsm6dsox.acceleration
+
     """
 
     _device_id = RegisterStruct(_LSM6DS_WHOAMI, "<b")

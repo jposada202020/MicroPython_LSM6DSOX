@@ -20,15 +20,12 @@ authors = [
 urls = {Homepage = "https://github.com/jposada202020/MicroPython_LSM6DSOX"}
 keywords = [
     "sensor",
-    "micropython",
-    "lsm6dsox",
     "accelerometer",
     "micropython",
     "lsm6dsox",
     "st",
     "gyro",
     "driver",
-    "sensor",
 ]
 license = {text = "MIT"}
 classifiers = [

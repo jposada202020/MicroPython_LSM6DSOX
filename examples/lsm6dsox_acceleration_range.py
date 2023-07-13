@@ -16,7 +16,7 @@ while True:
         print("Current Acceleration range setting: ", lsm.acceleration_range)
         for _ in range(3):
             accx, accy, accz = lsm.acceleration
-            print("x:{:.2f}m/s2, y:{:.2f}m/s2, z:{:.2f}m/s2".format(accx, accy, accz))
+            print(f"x:{accx:.2f}m/s2, y:{accy:.2f}m/s2, z{accz:.2f}m/s2")
             print()
             time.sleep(0.5)
         lsm.acceleration_range = acceleration_range
