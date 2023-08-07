@@ -38,7 +38,7 @@ To install directly using a WIFI capable board
 
 .. code-block:: shell
 
-    mip install github:jposada202020/MicroPython_LSM6DSOX
+    mip.install("github:jposada202020/MicroPython_LSM6DSOX")
 
 
 Installing Library Examples
@@ -54,7 +54,7 @@ To install directly using a WIFI capable board
 
 .. code-block:: shell
 
-    mip install github:jposada202020/MicroPython_LSM6DSOX/examples.json
+    mip.install("github:jposada202020/MicroPython_LSM6DSOX/examples.json")
 
 
 Installing from PyPI
